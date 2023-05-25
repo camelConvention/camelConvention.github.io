@@ -1,0 +1,52 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.bg {
+  height: 11em;
+  width: 15em;
+  background-image: url("https://media.discordapp.net/attachments/831963625468067933/1063240797513850910/Screenshot_2023-01-12_183753.png");
+  background-size: 1em;
+}
+
+.player {
+  height: 1em;
+  width: 1em;
+  position: relative;
+  top: 5em;
+  left: 7em;
+  background-size: 1em;
+  background-image: url("sprites/ingo_down1.png");
+}
+
+.bg.up {
+  animation: up 0.1s linear 0s infinite normal both
+}
+
+.bg.left {
+  animation: left 0.1s linear 0s infinite normal both
+}
+
+.bg.down {
+  animation: up 0.1s linear 0s infinite reverse both
+}
+
+.bg.right {
+  animation: left 0.1s linear 0s infinite reverse both
+}
+
+@keyframes left {
+  from {background-position-x: 0px}
+  to {background-position-x: 1em}
+}
+
+@keyframes up {
+  from {background-position-y: 0px}
+  to {background-position-y: 1em}
+}
